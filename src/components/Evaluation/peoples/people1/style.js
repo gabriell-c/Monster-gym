@@ -11,6 +11,12 @@ export const Container = styled.div`
     justify-content: center;
     flex-direction: column; 
     padding: 1em;
+
+    @media screen and (max-width: 415px) {
+        padding: .3em;
+        width: 95%;
+        height: 255px;
+    }
 `
 export const InfoText = styled.p`
     font-size: 18px;

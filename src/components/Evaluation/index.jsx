@@ -46,7 +46,7 @@ export default class SimpleSlider extends Component {
         autoplaySpeed: 2000,
         slidesToShow: 2,
         slidesToScroll: 5,
-        initialSlide: 0,
+        initialSlide: 1,
         nextArrow: <SampleNextArrow />,
         prevArrow: <SamplePrevArrow />,
         responsive: [
@@ -77,12 +77,11 @@ export default class SimpleSlider extends Component {
             }
           },
           {
-            breakpoint: 520,
+            breakpoint: 527,
             settings: {
                 centerMode: false,
                 slidesToShow: 1,
                 slidesToScroll: 1,
-                initialSlide: 1
             }
           },
         ]
