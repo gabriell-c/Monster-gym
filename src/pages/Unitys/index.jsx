@@ -16,15 +16,15 @@ import Select from '@mui/material/Select';
 export default function Index() {
     
     const [search, setSearch] = useState('')
-    const [age, setAge] = useState('');
+    const [filt, setFilt] = useState('');
 
     const handleChange = (event) => {
-        setAge(event.target.value);
+        setFilt(event.target.value);
     };
 
-    const resultSearch = JSONResult.filter((e) => e.estado.toLowerCase().startsWith(age.toLowerCase()));
+    const resultSearch = JSONResult.filter((e) => e.estado.toLowerCase().startsWith(filt.toLowerCase()));
 
-    const resultSelect = resultSearch.filter(e=>e.cidade.toLowerCase().startsWith(search))
+    const resultSelect = resultSearch.filter(e=>e.cidade.toLowerCase().startsWith(search.toLowerCase()))
 
     document.title = 'Monster gym - Unidades'
 
@@ -54,6 +54,7 @@ export default function Index() {
                 <MenuItem id='item' value='Paraná'>Paraná</MenuItem>
                 <MenuItem id='item' value='Santa Catarina'>Santa Catarina</MenuItem>
                 <MenuItem id='item' value='Rio Grande do Sul'>Rio Grande do Sul</MenuItem>
+                <MenuItem id='item' value='Rio de Janeiro'>Rio de Janeiro</MenuItem>
             </Select>
         </FormControl>
         <S.Container>
