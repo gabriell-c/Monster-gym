@@ -45,7 +45,7 @@ export default function Index() {
         <FormControl color='error' classes={{root: "selectState"}}>
             <InputLabel id="demo-simple-select-label">Estado</InputLabel>
             <Select labelId="demo-simple-select-label"
-            id="demo-simple-select" value={age} label="Estado"
+            id="demo-simple-select" value={filt} label="Estado"
             onChange={handleChange}>
                 <MenuItem id='item' value=''></MenuItem> 
                 <MenuItem id='item' value='São Paulo'>São Paulo</MenuItem>
